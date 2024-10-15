@@ -1,0 +1,527 @@
+
+/* ---  Hero section  --- */
+
+main {
+    width: 100%;
+    height: fit-content;
+    padding-top: 130px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 90px;
+    }
+}
+
+.hero {
+    display: flex;
+    padding: 30px 60px;
+    height: fit-content;
+    width: 100%;
+}
+
+.carousel {
+    width: 70%;
+    height: 100%;
+}
+
+.hero aside {
+    width: 30%;
+    background-color: white;
+}
+
+
+
+
+
+/* Live Updates */
+.update-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.update-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.update-heading .update-heading-box {
+    min-width: 15px;
+    min-height: 15px;
+    background-color: red !important;
+}
+
+.update-heading h2 {
+    font-size: 25px;
+    font-weight: 700px;
+    line-height: 34px;
+    min-width: fit-content;
+    color: #4a4a4a;
+}
+
+.update-heading .update-heading-line {
+    background-color: #aaa;
+    height: 2px;
+    width: 100%;
+}
+
+.updates {
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.updates-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px !important;
+}
+
+.updates div:nth-of-type(1) .updated-time {
+    margin-top: 0px;
+}
+
+.updated-time {
+    margin-top: 40px;
+    font-size: 14px;
+    min-width: fit-content !important;
+    padding-right: 15px;
+    color: #666;
+    position: relative;
+}
+
+.updated-time::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    left: 59px;
+}
+
+.updated-content {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.updates div:nth-of-type(1) .updated-heading {
+    margin-top: -5px;
+}
+
+.updated-heading {
+    font-size: 18px;
+    margin-top: 35px;
+    color: #4A4A4A;
+    font-weight: 800;
+}
+
+.updated-user {
+    font-size: 13px;
+    color: #666;
+}
+
+.updated-text {
+    font-size: 16px;
+    line-height: 21px;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.updated-image {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.updates div:nth-of-type(5) .updated-image {
+    height: 300px;
+    background: url('https://live.staticflickr.com/65535/54067772130_2707388d07_o.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.updated-image-1 {
+    width: 50%;
+    height: 180px;
+    background: url('https://live.staticflickr.com/65535/54067772130_2707388d07_o.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.updated-image-2 {
+    width: 50%;
+    height: 180px;
+    background: url('https://live.staticflickr.com/65535/54067772130_2707388d07_o.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.updated-comment-section {
+    display: flex;
+    width: 100%;
+    background-color: #eeeeee !important;
+    border-radius: 10px;
+}
+
+.updated-comment-section input {
+    background-color: inherit;
+    border-radius: inherit;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    padding: 20px 5px;
+}
+
+.updated-comment-section input::placeholder {
+    color: #666;
+    font-weight: 800;
+}
+
+button {
+    height: 48px;
+    width: 157px;
+    border-radius: 10px;
+    background: #4A4A4A;
+    font-size: 13px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    background-color: red;
+}
+
+.updated-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.updated-icons i {
+    font-size: 15px;
+    padding: 7px;
+    background-color: #ffdfdf;
+    color: red;
+    border-radius: 100%;
+}
+
+.updated-icons i:nth-of-type(1) {
+    background-color: white !important;
+    color: #cecece !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .update-post {
+        margin-top: -10px !important;
+    }
+
+    .updates {
+        padding: 20px 0 0 0;
+    }
+
+    .updated-content {
+        border: none;
+        padding-bottom: 40px;
+    }
+
+    .updates-card {
+        flex-direction: column;
+        border-left: 2px solid #aaa;
+    }
+
+    .updated-time {
+        padding-left: 20px;
+        margin-top: 0px !important;
+    }
+
+    .updated-time::after {
+        left: -7px;
+    }
+
+    .updated-heading {
+        margin-top: 10px !important;
+    }
+
+    .updates div:nth-of-type(5) .updated-image {
+        height: 200px;
+    }
+
+    .updated-image {
+        flex-direction: column;
+    }
+
+    .updated-image-1,
+    .updated-image-2 {
+        width: 100%;
+    }
+}
+
+
+
+/* Aside */
+.social-feed {
+    min-width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feed {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    padding: 0px 15px;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 15px;
+}
+
+.feed-heading {
+    display: flex;
+    padding-bottom: 17px;
+    gap: 12px;
+    border-bottom: 1px solid #aaa;
+}
+
+.feed-heading img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.feed-heading p {
+    margin-top: 20px;
+    font-weight: 700;
+    color: red;
+    font-size: 12px;
+}
+
+.feed-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 15px;
+}
+
+.feed-post-heading {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.feed-post-heading img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.feed-post-heading p {
+    margin-left: -20px !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.feed-post-heading span {
+    font-size: 13px;
+    color: #4A4A4A;
+    align-self: flex-end;
+    font-weight: 400;
+}
+
+.feed-post-content p {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.feed-post-hashtags {
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.feed-post-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: #666;
+    font-size: 12px;
+}
+
+
+.newsletter-bottom {
+    width: 300px !important;
+    display: flex;
+    min-height: 277px;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgba(211, 211, 211, 0.359);
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.newsletter-bottom h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.subscribe-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.subscribe-btn:hover {
+    background-color: #b71c1c;
+}
+
+.candidate-aside {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.candidate-aside-heading {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.candidate-aside-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.candidate-aside-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.candidate-img {
+    width: 50%;
+    height: 121px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* background-image: url('assets/images/buhari.png'); */
+    background-position: top left;
+}
+.candidate-img img{
+    width: 100%;
+}
+
+.candidate-content {
+    width: 50%;
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 10px;
+    background-color: #cecece;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.candidate-content p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.candidate-content span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+
+@media (max-width: 990px) {
+    .social-feed {
+        display: none !important;
+    }
+
+    .feed {
+        width: 300px !important;
+        height: 600px !important;
+    }
+
+    .candidate-aside {
+        display: none;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 10px 10px;
+        height: fit-content;
+    }
+}
