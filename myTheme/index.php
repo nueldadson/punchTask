@@ -7,6 +7,7 @@
                 <div class="slide activee">
                     <div class="img hero1">
                         <div class="overlay">
+
                         </div>
                     </div>
                     <div class="content">
